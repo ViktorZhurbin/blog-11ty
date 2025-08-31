@@ -1,3 +1,5 @@
+import "tsx/esm";
+import { renderToStaticMarkup } from "react-dom/server";
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
@@ -6,7 +8,8 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginFilters from "./_config/filters.js";
 
-/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+/** @import UserConfig from "@11ty/eleventy/UserConfig" */
+/** @param {UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
@@ -119,6 +122,17 @@ export default async function(eleventyConfig) {
 		return (new Date()).toISOString();
 	});
 
+	// JSX/TSX support
+	eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
+		key: "11ty.js",
+		compile: function () {
+			return async function (data) {
+				let content = await this.defaultRenderer(data);
+				return renderToStaticMarkup(content);
+			};
+		},
+	});
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
@@ -137,6 +151,8 @@ export const config = {
 		"html",
 		"liquid",
 		"11ty.js",
+		"11ty.jsx",
+		"11ty.tsx",
 	],
 
 	// Pre-process *.md files with: (default: `liquid`)
