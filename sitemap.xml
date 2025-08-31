@@ -1,66 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/blog/firstpost/</loc>
-			<lastmod>2018-05-01</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/blog/secondpost/</loc>
-			<lastmod>2018-07-04</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/blog/thirdpost/</loc>
-			<lastmod>2018-08-24</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/blog/fourthpost/</loc>
-			<lastmod>2018-09-30</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/about/</loc>
-			<lastmod>2025-08-31</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/blog/</loc>
-			<lastmod>2025-08-31</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/</loc>
-			<lastmod>2025-08-31</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/tags/</loc>
-			<lastmod>2025-08-31</lastmod>
-		</url>
-	
-	
-		
-		<url>
-			<loc>https://example.com/blog-11ty/feed/feed.xml</loc>
-			<lastmod>2025-08-31</lastmod>
-		</url>
-	
-</urlset>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot; xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/blog/firstpost/&lt;/loc&gt;
+			&lt;lastmod&gt;2018-05-01&lt;/lastmod&gt;
+		&lt;/url&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/blog/secondpost/&lt;/loc&gt;
+			&lt;lastmod&gt;2018-07-04&lt;/lastmod&gt;
+		&lt;/url&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/blog/thirdpost/&lt;/loc&gt;
+			&lt;lastmod&gt;2018-08-24&lt;/lastmod&gt;
+		&lt;/url&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/blog/fourthpost/&lt;/loc&gt;
+			&lt;lastmod&gt;2018-09-30&lt;/lastmod&gt;
+		&lt;/url&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/about/&lt;/loc&gt;
+			&lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+		&lt;/url&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/blog/&lt;/loc&gt;
+			&lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+		&lt;/url&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/&lt;/loc&gt;
+			&lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+		&lt;/url&gt;
+		&lt;url&gt;
+			&lt;loc&gt;https://example.com/tags/&lt;/loc&gt;
+			&lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+		&lt;/url&gt;
+&lt;/urlset&gt;
