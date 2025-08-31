@@ -1,7 +1,7 @@
 import React from "react";
 
 export const data = {
-	layout: "layouts/base.njk",
+	layout: "layouts/base.11ty.tsx",
 };
 
 export default function (data) {
@@ -11,11 +11,30 @@ export default function (data) {
 		<>
 			<div>
 				<ol>
-					<li>Edit <code>_data/metadata.js</code> with your blog's information.</li>
-					<li>(Optional) Edit <code>eleventy.config.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-					<li>Delete this message from <code>_includes/layouts/home.njk</code>.</li>
+					<li>
+						Edit <code>_data/metadata.js</code> with your blog's information.
+					</li>
+					<li>
+						(Optional) Edit <code>eleventy.config.js</code> with your{" "}
+						<a href="https://www.11ty.dev/docs/config/">
+							configuration preferences
+						</a>
+						.
+					</li>
+					<li>
+						Delete this message from <code>_includes/layouts/home.njk</code>.
+					</li>
 				</ol>
-				<p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+				<p>
+					<em>
+						This is an <a href="https://www.11ty.dev/">Eleventy project</a>{" "}
+						created from the{" "}
+						<a href="https://github.com/11ty/eleventy-base-blog">
+							<code>eleventy-base-blog</code> repo
+						</a>
+						.
+					</em>
+				</p>
 			</div>
 
 			<div dangerouslySetInnerHTML={{ __html: content }} />

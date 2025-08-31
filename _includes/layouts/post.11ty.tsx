@@ -3,7 +3,7 @@ import { getHtmlDateString, getReadableDate } from "../../utils/dateTime";
 import { filterTagList } from "../../utils/filterTagList";
 
 export const data = {
-	layout: "layouts/base.njk",
+	layout: "layouts/base.11ty.tsx",
 };
 
 export default function (data) {

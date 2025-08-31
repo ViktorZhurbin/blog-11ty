@@ -41,7 +41,6 @@
 		"zod-validation-error": "^3.5.2"
 	},
 	"dependencies": {
-		"@zachleat/heading-anchors": "^1.0.3",
 		"react-dom": "^19",
 		"tsx": "^4.20.5"
 	}
