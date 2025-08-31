@@ -12,8 +12,8 @@ export default function (data) {
 	const filteredTags = filterTagList(data.tags);
 
 	const posts = collections?.posts || [];
-	const previousPost = this.getPreviousCollectionItem(posts, page);
-	const nextPost = this.getNextCollectionItem(posts, page);
+	const previousPost = this.getPreviousCollectionItem(posts);
+	const nextPost = this.getNextCollectionItem(posts);
 
 	return (
 		<>
@@ -33,7 +33,7 @@ export default function (data) {
 				</li>
 				{filteredTags.map((tag, index) => (
 					<li key={tag}>
-						<a href={`/tags/${this.slugify(tag || title)}`}>{tag}</a>
+						<a href={`/tags/${this.slugify(tag)}`}>{tag}</a>
 						{index < filteredTags.length - 1 && ", "}
 					</li>
 				))}
